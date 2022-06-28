@@ -1,13 +1,13 @@
 import { GroupPayload, TaskPayload } from '../features/tasks/tasks-slice'
 import {
-  arrayMoveMutable,
   arrayMoveImmutable,
+  arrayMoveMutable,
   getPercentage,
-  groupTasksByCompletedStatus,
-  truncateText,
   getPlainPreview,
   getTaskArrayFromGroupedTasks,
+  groupTasksByCompletedStatus,
   parseMarkdownTasks,
+  truncateText,
 } from './utils'
 
 describe('arrayMoveMutable', () => {
@@ -229,9 +229,7 @@ describe('getPlainPreview', () => {
 
     expect(getPlainPreview(groupedTasks)).toBe('2/5 tasks completed')
     expect(getPlainPreview([])).toBe('0/0 tasks completed')
-    expect(getPlainPreview([{ name: 'Test', tasks: [] }])).toBe(
-      '0/0 tasks completed'
-    )
+    expect(getPlainPreview([{ name: 'Test', tasks: [] }])).toBe('0/0 tasks completed')
   })
 })
 

@@ -1,6 +1,6 @@
 import { ChangeEvent, createRef, KeyboardEvent, useState } from 'react'
-import { v4 as uuidv4 } from 'uuid'
 import styled from 'styled-components'
+import { v4 as uuidv4 } from 'uuid'
 
 import { useAppDispatch, useAppSelector } from '../../app/hooks'
 import { GroupPayload, taskAdded, tasksGroupDraft } from './tasks-slice'
@@ -29,9 +29,7 @@ const CreateTask: React.FC<CreateTaskProps> = ({ group }) => {
 
   const dispatch = useAppDispatch()
 
-  const spellCheckerEnabled = useAppSelector(
-    (state) => state.settings.spellCheckerEnabled
-  )
+  const spellCheckerEnabled = useAppSelector((state) => state.settings.spellCheckerEnabled)
   const canEdit = useAppSelector((state) => state.settings.canEdit)
   const allGroups = useAppSelector((state) => state.tasks.groups)
 
@@ -51,9 +49,7 @@ const CreateTask: React.FC<CreateTaskProps> = ({ group }) => {
         return
       }
 
-      dispatch(
-        taskAdded({ task: { id: uuidv4(), description: rawString }, groupName })
-      )
+      dispatch(taskAdded({ task: { id: uuidv4(), description: rawString }, groupName }))
       setTaskDraft('')
     }
   }
