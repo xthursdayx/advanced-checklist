@@ -49,6 +49,10 @@ html {
     fill: var(--sn-stylekit-info-color);
   }
 
+  .info-color {
+    color: var(--sn-stylekit-info-color);
+  }
+
   .sn-icon-button {
     border-width: 0;
 
@@ -66,6 +70,14 @@ html {
 
   .pt-1px {
     padding-top: 1px;
+  }
+
+  .align-baseline {
+    align-items: baseline;
+  }
+
+  .align-center {
+    align-items: center;
   }
 }
 

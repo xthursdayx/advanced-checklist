@@ -3,6 +3,67 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.5](https://github.com/standardnotes/app/compare/@standardnotes/advanced-checklist@0.2.4...@standardnotes/advanced-checklist@0.2.5) (2022-09-13)
+
+**Note:** Version bump only for package @standardnotes/advanced-checklist
+
+## [0.2.4](https://github.com/standardnotes/app/compare/@standardnotes/advanced-checklist@0.2.3...@standardnotes/advanced-checklist@0.2.4) (2022-08-23)
+
+**Note:** Version bump only for package @standardnotes/advanced-checklist
+
+## [0.2.3](https://github.com/standardnotes/app/compare/@standardnotes/advanced-checklist@0.2.2...@standardnotes/advanced-checklist@0.2.3) (2022-07-13)
+
+### Bug Fixes
+
+* upgrade jest with types to latest version ([09e08ca](https://github.com/standardnotes/app/commit/09e08ca899ba8694cf43292e918c4c204c0d2cb9))
+* upgrade ts-jest in packages ([71e792d](https://github.com/standardnotes/app/commit/71e792da354ff90335b92758e196075a0f88d060))
+
+## [0.2.2](https://github.com/standardnotes/app/compare/@standardnotes/advanced-checklist@0.2.1...@standardnotes/advanced-checklist@0.2.2) (2022-07-06)
+
+### Bug Fixes
+
+* **advanced checklist:** improve editor styles ([#1221](https://github.com/standardnotes/app/issues/1221)) ([f7ba658](https://github.com/standardnotes/app/commit/f7ba6588a7d062e3ec82e6413042ce5d8cd075f7))
+
+## [0.2.1](https://github.com/standardnotes/app/compare/@standardnotes/advanced-checklist@0.2.0...@standardnotes/advanced-checklist@0.2.1) (2022-07-06)
+
+**Note:** Version bump only for package @standardnotes/advanced-checklist
+
+# [0.2.0](https://github.com/standardnotes/app/compare/@standardnotes/advanced-checklist@0.1.6...@standardnotes/advanced-checklist@0.2.0) (2022-07-06)
+
+### Features
+
+* add utils package ([aef4ceb](https://github.com/standardnotes/app/commit/aef4ceb7f85948f1f08b8b09a4db5d187daa371b))
+
+## [0.1.6](https://github.com/standardnotes/app/compare/@standardnotes/advanced-checklist@0.1.5...@standardnotes/advanced-checklist@0.1.6) (2022-07-05)
+
+### Bug Fixes
+
+* **advanced checklist:** remove test for reorder icon ([#1209](https://github.com/standardnotes/app/issues/1209)) ([296aa9a](https://github.com/standardnotes/app/commit/296aa9aab2072d4aad68485c31c000ad2c3bf013))
+
+## [0.1.5](https://github.com/standardnotes/app/compare/@standardnotes/advanced-checklist@0.1.4...@standardnotes/advanced-checklist@0.1.5) (2022-07-05)
+
+### Bug Fixes
+
+* **advanced checklist:** UI changes ([#1208](https://github.com/standardnotes/app/issues/1208)) ([1ce4cb3](https://github.com/standardnotes/app/commit/1ce4cb3c5c8f4e590fd67fdbd684b36ac6383bd9))
+
+## [0.1.4](https://github.com/standardnotes/app/compare/@standardnotes/advanced-checklist@0.1.3...@standardnotes/advanced-checklist@0.1.4) (2022-07-04)
+
+### Bug Fixes
+
+* **advanced checklist:** animations and error handling ([#1200](https://github.com/standardnotes/app/issues/1200)) ([a0205a5](https://github.com/standardnotes/app/commit/a0205a5c7dd72184cb575195ced3132091072239))
+
+## [0.1.3](https://github.com/standardnotes/app/compare/@standardnotes/advanced-checklist@0.1.2...@standardnotes/advanced-checklist@0.1.3) (2022-06-30)
+
+### Bug Fixes
+
+* debounce saving task description/draft ([#1187](https://github.com/standardnotes/app/issues/1187)) ([47a0551](https://github.com/standardnotes/app/commit/47a0551967ca420a957e2123d56bd7f0c8a95c53))
+
+## [0.1.2](https://github.com/standardnotes/app/compare/@standardnotes/advanced-checklist@0.1.1...@standardnotes/advanced-checklist@0.1.2) (2022-06-29)
+
+### Bug Fixes
+
+* **advanced checklist:** style and layout improvements ([#1182](https://github.com/standardnotes/app/issues/1182)) ([6c19adb](https://github.com/standardnotes/app/commit/6c19adba1902ef054f501d57f6e284fbf44ca28b))
+
 ## [0.1.1](https://github.com/standardnotes/app/compare/@standardnotes/advanced-checklist@0.1.0...@standardnotes/advanced-checklist@0.1.1) (2022-06-28)
 
 **Note:** Version bump only for package @standardnotes/advanced-checklist

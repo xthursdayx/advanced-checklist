@@ -2,22 +2,16 @@ import { ChangeEvent, createRef, KeyboardEvent, useState } from 'react'
 import styled from 'styled-components'
 import { v4 as uuidv4 } from 'uuid'
 
-import { useAppDispatch, useAppSelector } from '../../app/hooks'
+import { useAppDispatch, useAppSelector, useDebouncedCallback } from '../../app/hooks'
 import { GroupModel, taskAdded, tasksGroupDraft } from './tasks-slice'
 
 import { TextInput } from '../../common/components'
-import { DottedCircleIcon } from '../../common/components/icons'
 import { isLastActiveGroup } from '../../common/utils'
 
 const Container = styled.div`
   align-items: center;
   display: flex;
   margin-bottom: 8px;
-
-  & > *:first-child {
-    margin-left: 1px;
-    margin-right: 9px;
-  }
 `
 
 type CreateTaskProps = {
@@ -37,9 +31,7 @@ const CreateTask: React.FC<CreateTaskProps> = ({ group }) => {
   const [taskDraft, setTaskDraft] = useState<string>(group.draft ?? '')
 
   function onTextChange(event: ChangeEvent<HTMLInputElement>) {
-    const draft = event.target.value
-    dispatch(tasksGroupDraft({ groupName, draft }))
-    setTaskDraft(draft)
+    setTaskDraft(event.target.value)
   }
 
   function handleKeyPress(event: KeyboardEvent<HTMLInputElement>) {
@@ -54,6 +46,13 @@ const CreateTask: React.FC<CreateTaskProps> = ({ group }) => {
     }
   }
 
+  useDebouncedCallback(() => {
+    const currentDraft = group.draft ?? ''
+    if (currentDraft !== taskDraft) {
+      dispatch(tasksGroupDraft({ groupName, draft: taskDraft }))
+    }
+  })
+
   if (!canEdit) {
     return <></>
   }
@@ -62,7 +61,6 @@ const CreateTask: React.FC<CreateTaskProps> = ({ group }) => {
 
   return (
     <Container>
-      <DottedCircleIcon />
       <TextInput
         testId="create-task-input"
         disabled={!canEdit}
