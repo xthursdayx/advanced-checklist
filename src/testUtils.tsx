@@ -24,6 +24,7 @@ export function testRender(ui: React.ReactElement, renderOptions?: RenderOptions
     ...state,
   })
   function Wrapper({ children }: { children: React.ReactElement<any, string | React.JSXElementConstructor<any>> }) {
+    /** @ts-ignore */
     return <Provider store={mockStore}>{children}</Provider>
   }
   return {
